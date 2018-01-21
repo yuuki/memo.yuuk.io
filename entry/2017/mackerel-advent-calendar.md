@@ -8,11 +8,10 @@ Category:
 Date: 2017-12-19T22:59:07+09:00
 URL: http://memo.yuuk.io/entry/2017/mackerel-advent-calendar
 EditURL: https://blog.hatena.ne.jp/y_uuki/performance.hatenablog.jp/atom/entry/8599973812328092879
-CustomPath: 2017/mackerel-advent-calendar
 ---
 
 この記事は、[Mackerel Advent Calendar 2017](https://qiita.com/advent-calendar/2017/mackerel)の19日目の記事です。
-前日は fullsat_ さんによる[https://qiita.com/fullsat_/items/6297bcb436f74c9b0a70:title] でした。
+前日は fullsat_ さんによる [Lambdaを使ってMackerelのアラートをRedmineのチケットにする](https://qiita.com/fullsat_/items/6297bcb436f74c9b0a70) でした。
 
 ウェブシステムの障害発生時に、どのコンポーネントの処理が滞っているかをざっくり知りたいことがあります。
 そこで、ウェブシステムは待ち行列の集合体であることに着目し、各コンポーネント状態を把握するダッシュボードを最近作成しています。

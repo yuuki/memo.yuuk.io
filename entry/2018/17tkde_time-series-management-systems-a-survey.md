@@ -1,5 +1,5 @@
 ---
-Title: 論文 TKDE'17, Time Series Management Systems A Survey
+Title: '論文 TKDE''17, Time Series Management Systems: A Survey'
 Category:
 - Paper
 - TKDE
@@ -9,7 +9,6 @@ Category:
 Date: 2018-01-22T02:44:04+09:00
 URL: http://memo.yuuk.io/entry/2018/17tkde_time-series-management-systems-a-survey
 EditURL: https://blog.hatena.ne.jp/y_uuki/performance.hatenablog.jp/atom/entry/8599973812339781184
-CustomPath: 2018/17tkde_time-series-management-systems-a-survey
 ---
 
 Cyber Physical Systems((IoTに近い用語))の文脈における時系列データベース(TSDB)のサーベイ論文。論文中では、TSDBをTime Series Management System(TSMS)と表現されている。
