@@ -21,12 +21,14 @@ Draft: true
 
 # Chapter2: Data Models and Query Languages
 
-かつてのデータモデルは階層型データモデル。1つのツリーでデータを表現しようとしていた。
-しかし、many-to-manyリレーションをうまく表現できなかったため、リレーショナルデータモデルが登場した。
+かつてのデータモデルは1つの巨大なツリー(階層型データモデル)としてデータを表現しようとしていた。
+しかし、many-to-manyリレーションをうまく表現できなかったため、リレーショナルデータモデルが発明された。
+近年では、開発者はリレーショナルモデルでさえ、いくつかのアプリケーションにフィットしないことを発見した。
 リレーショナルモデルでない新しいモデルをNoSQLデータストアと呼び、これらは以下の2つに派生した。
 
-- ドキュメントデータベース
-- グラフデータベース
+- ドキュメントデータベース: データが自己完結型の"ドキュメント"に入っていて、ドキュメント間の関係はほとんどないユースケース
+  - MongoDB, RethinkDB, CouchDB, Espresso
+- グラフデータベース: ドキュメントデータベースとは逆に、潜在的にすべてに関係するものがあるユースケース
 
 ## ドキュメントデータベース
 
@@ -46,6 +48,29 @@ ALTER TABLE users ADD COLUMN first_name text;
 UPDATE users SET first_name = split_part(name, ' ', 1); -- PostgreSQL
 UPDATE users SET first_name = substring_index(name, ' ', 1); -- MySQL
 ```
+
+ドキュメントデータベースとグラフデータベースは、共通してデータのスキーマを強制しない。
+しかし、実際にはデータは確かな構造を持つ。
+スキーマがexplicit(schema-on-write)かimplicit(schema-on-read)かという問い。
+プログラミング言語の静的型付けor動的型付けの議論に似ている。
+
+次章では、この章のデータモデルを「実装」する上でのトレードオフについて議論する。
+
+## 興味深い文献
+
+- [4] Eric Evans: “NoSQL: What’s in a Name?,” blog.sym-link.com, October 30, 2009. 
+- [5] James Phillips: “Surprises in Our NoSQL Adoption Survey,” blog.couchbase.com, February 8, 2012.
+- [12] Lin Qiao, Kapil Surlaker, Shirshanka Das, et al.: “On Brewing Fresh Espresso: LinkedIn’s Distributed Data Serving Platform,” at ACM International Conference on Management of Data (SIGMOD), June 2013.
+- [15] Sarah Mei: “Why You Should Never Use MongoDB,” sarahmei.com, November 11, 2013.
+- [18] Joseph M. Hellerstein, Michael Stonebraker, and James Hamilton: “Architecture of a Database System,” Foundations and Trends in Databases, volume 1, number 2, pages 141–259, November 2007. doi:10.1561/1900000002
+- [19] Sandeep Parikh and Kelly Stirman: “Schema Design for Time Series Data in MongoDB,” blog.mongodb.org, October 30, 2013.
+- [20] Martin Fowler: “Schemaless Data Structures,” martinfowler.com, January 7, 2013.
+- [21] Amr Awadallah: “Schema-on-Read vs. Schema-on-Write,” at Berkeley EECS RAD Lab Retreat, Santa Cruz, CA, May 2009. 
+- [22] Martin Odersky: “The Trouble with Types,” at Strange Loop, September 2013.
+- [29] Fay Chang, Jeffrey Dean, Sanjay Ghemawat, et al.: “Bigtable: A Distributed Stor‐ age System for Structured Data,” at 7th USENIX Symposium on Operating System Design and Implementation (OSDI), November 2006.
+- [31] Herb Sutter: “The Free Lunch Is Over: A Fundamental Turn Toward Concurrency in Software,” Dr. Dobb’s Journal, volume 30, number 3, pages 202-210, March 2005.
+- [35] Nathan Bronson, Zach Amsden, George Cabrera, et al.: “TAO: Facebook’s Dis‐ tributed Data Store for the Social Graph,” at USENIX Annual Technical Conference (USENIX ATC), June 2013.
+
 
 # Chapter3: Storage and Retrieval
 
