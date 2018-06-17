@@ -6,7 +6,7 @@ Category:
 - Monitoring
 - Mackerel
 Date: 2017-12-19T22:59:07+09:00
-URL: http://memo.yuuk.io/entry/2017/mackerel-advent-calendar
+URL: https://memo.yuuk.io/entry/2017/mackerel-advent-calendar
 EditURL: https://blog.hatena.ne.jp/y_uuki/performance.hatenablog.jp/atom/entry/8599973812328092879
 ---
 
@@ -16,7 +16,7 @@ EditURL: https://blog.hatena.ne.jp/y_uuki/performance.hatenablog.jp/atom/entry/8
 ウェブシステムの障害発生時に、どのコンポーネントの処理が滞っているかをざっくり知りたいことがあります。
 そこで、ウェブシステムは待ち行列の集合体であることに着目し、各コンポーネント状態を把握するダッシュボードを最近作成しています。
 
-待ち行列については、自分もそれほど詳しいわけではありませんが、[http://www.campus.ouj.ac.jp/~maps17/11/11Queueing_pat.pdf:title]をみるとざっと把握できます。
+待ち行列については、自分もそれほど詳しいわけではありませんが、[https://www.campus.ouj.ac.jp/~maps17/11/11Queueing_pat.pdf:title=待ち行列システム]をみるとざっと把握できます。
 簡単な例として、安定した系であれば、リトルの法則により、平均待ち行列数Lは、平均到着率λと平均待ち時間Wの積に等しいことがわかっています。
 [http://memo.yuuk.io/entry/2016/03/27/023002:title]
 
@@ -26,7 +26,7 @@ EditURL: https://blog.hatena.ne.jp/y_uuki/performance.hatenablog.jp/atom/entry/8
 - 平均到着率 => 単位時間あたりのリクエスト/クエリ数など
 - 平均待ち時間 => レスポンスタイムなど
 
-これらの2つのうちが判明していれば、残りの1つも推定できます。
+これらのうち2つが判明していれば、残りの1つも推定できます。
 
 ## MySQLの場合
 
