@@ -4,7 +4,9 @@ Category:
 - Paper
 - Survey
 - Edge
-CostomPath: 2019/learning-edge-computing01
+Date: 2019-02-17T00:19:08+09:00
+URL: https://memo.yuuk.io/entry/2019/learning-edge-computing01
+EditURL: https://blog.hatena.ne.jp/y_uuki/performance.hatenablog.jp/atom/entry/17680117126966161268
 ---
 
 研究所で[データセンターのあり方を見直して](https://hb.matsumoto-r.jp/entry/2019/02/08/135354)、新しいコンピューティングのあり方を提案していくぞという話をしており、先行技術としてエッジコンピューティングについて調査している。
@@ -114,6 +116,8 @@ see also [https://research.sakura.ad.jp/2017/12/08/intro-fog/:title]
 ## Mobile edge computing (MEC)
 
 [f:id:y_uuki:20190216225208p:image]
+(出典: 当該論文のFig. 7. "Mobile edge computing")
+
 
 - MECは、移動体通信ネットワークのエッジでクラウドコンピューティングとITサービス環境を持ち込むように設計されている。
 - MECサーバは、移動体通信基地局にデプロイされ、新しいアプリケーションの柔軟で高速なデプロイを可能とする。
@@ -121,6 +125,8 @@ see also [https://research.sakura.ad.jp/2017/12/08/intro-fog/:title]
 - 自動車とクラウド間のエンドトゥーエンドのレイテンシは100ms以上ある。分散されたMEC cloudletsをもつ基地局は、レイテンシを20ms以下にする。
 
 次の記事では、当該論文にまとめられているApplicationsについてメモする。
+
+[https://memo.yuuk.io/entry/2019/learning-edge-computing02:embed:cite]
 
 <!-- # Applications
 
